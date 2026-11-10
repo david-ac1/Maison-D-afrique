@@ -61,9 +61,9 @@ a {
   text-decoration: none;
 }
 
-.brand-mark {
-  color: var(--gold);
-  font: 500 1.4rem/1 var(--serif);
+.brand-logo {
+  width: auto;
+  height: 3rem;
 }
 
 .brand-name {
@@ -196,8 +196,18 @@ p {
   text-align: center;
 }
 
-.hero .image-placeholder {
+.hero-image {
+  width: 100%;
   aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: top;
+}
+
+.card-image {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  object-position: top;
 }
 
 .section {
@@ -211,6 +221,54 @@ p {
 .split-section p {
   max-width: 36rem;
   color: var(--muted);
+}
+
+.section-intro {
+  max-width: 36rem;
+  color: var(--muted);
+}
+
+.application-grid {
+  display: grid;
+  gap: 0.75rem;
+  margin-top: 2rem;
+}
+
+.application-grid .image-placeholder {
+  min-height: 9rem;
+  aspect-ratio: 1;
+}
+
+.craft-list {
+  display: grid;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.craft-list li {
+  position: relative;
+  padding-left: 1.5rem;
+  color: var(--muted);
+}
+
+.craft-list li::before {
+  position: absolute;
+  top: 0.7em;
+  left: 0;
+  width: 0.5rem;
+  height: 0.5rem;
+  background: var(--gold);
+  content: "";
+  transform: rotate(45deg);
+}
+
+.contact-links {
+  display: grid;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+  max-width: 20rem;
 }
 
 .narrow-section {
@@ -286,6 +344,11 @@ textarea {
   gap: 1rem;
 }
 
+.footer-logo {
+  width: auto;
+  height: 3.5rem;
+}
+
 @media (min-width: 700px) {
   .brand-name,
   .site-nav {
@@ -302,6 +365,10 @@ textarea {
   .collection-grid {
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
+  }
+
+  .application-grid {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 

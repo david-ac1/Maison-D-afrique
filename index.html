@@ -14,7 +14,7 @@
     <header class="site-header">
       <div class="container header-bar">
         <a class="brand" href="#top" aria-label="La Maison d’Afrique home">
-          <span class="brand-mark" aria-hidden="true">LM</span>
+          <img class="brand-logo" src="assets/images/logo.jpg" alt="" />
           <span class="brand-name">La Maison d’Afrique</span>
         </a>
 
@@ -25,7 +25,7 @@
           <a href="#enquire">Enquire</a>
         </nav>
 
-        <a class="button button-gold" href="#enquire">WhatsApp</a>
+        <a class="button button-gold" data-whatsapp href="#">WhatsApp</a>
       </div>
     </header>
 
@@ -43,15 +43,17 @@
               <a class="button button-outline" href="#collections">
                 Explore Collections
               </a>
-              <a class="button button-gold" href="#enquire">
+              <a class="button button-gold" data-whatsapp href="#">
                 Enquire on WhatsApp
               </a>
             </div>
           </div>
 
-          <div class="image-placeholder" role="img" aria-label="Featured textile image placeholder">
-            Featured textile photograph
-          </div>
+          <img
+            class="hero-image"
+            src="assets/images/hero-textile.jpg"
+            alt="Hand-dyed embroidered cotton lace draped on a mannequin, with a close-up of the fabric"
+          />
         </div>
       </section>
 
@@ -61,11 +63,18 @@
             <p class="eyebrow">Our Story</p>
             <h2>Textiles with a sense of place.</h2>
           </div>
-          <p>
-            La Maison d’Afrique creates, sources, and develops expressive African
-            textiles for fashion, interiors, and beyond. Approved brand story copy
-            will be added when supplied.
-          </p>
+          <div>
+            <p>
+              La Maison d’Afrique is a contemporary African luxury textile house.
+              We create, curate, source and develop expressive textiles, combining
+              heritage weaving, artisanal hand-dyeing and bespoke development.
+            </p>
+            <p>
+              Our ambition is to bring African textiles into contemporary fashion
+              and interiors, with thoughtful curation and respect for the hands
+              that make them.
+            </p>
+          </div>
         </div>
       </section>
 
@@ -75,41 +84,53 @@
           <h2>Explore the collection.</h2>
           <div class="collection-grid">
             <article class="collection-card">
-              <div class="image-placeholder" role="img" aria-label="Collection image placeholder">
-                Collection image
-              </div>
-              <h3>Collection One</h3>
-              <p>Approved collection description to be supplied.</p>
-              <a href="#enquire">Enquire about this collection</a>
+              <div class="image-placeholder">Northern Kente photograph<br />awaiting approved image</div>
+              <h3>Heritage Textiles</h3>
+              <p>Hand-woven cloth rooted in West African weaving traditions, including Northern Kente.</p>
+              <a href="#enquire" data-interest="Heritage Textiles">Enquire about Heritage</a>
             </article>
             <article class="collection-card">
-              <div class="image-placeholder" role="img" aria-label="Collection image placeholder">
-                Collection image
-              </div>
-              <h3>Collection Two</h3>
-              <p>Approved collection description to be supplied.</p>
-              <a href="#enquire">Enquire about this collection</a>
+              <img class="card-image" src="assets/images/contemporary-textile.jpg" alt="Blue and rust hand-dyed embroidered cotton lace" loading="lazy" />
+              <h3>Contemporary Textiles</h3>
+              <p>Chiffon, rayon satin, embroidered cotton lace and textured stretch fabrics in expressive colour.</p>
+              <a href="#enquire" data-interest="Contemporary Textiles">Enquire about Contemporary</a>
             </article>
             <article class="collection-card">
-              <div class="image-placeholder" role="img" aria-label="Collection image placeholder">
-                Collection image
-              </div>
-              <h3>Collection Three</h3>
-              <p>Approved collection description to be supplied.</p>
-              <a href="#enquire">Enquire about this collection</a>
+              <img class="card-image" src="assets/images/bespoke-textile.jpg" alt="Rust hand-dyed fabric draped on a mannequin" loading="lazy" />
+              <h3>Bespoke Studio</h3>
+              <p>Custom colourways, dyeing and development for designers, ateliers and interiors.</p>
+              <a href="#enquire" data-interest="Bespoke Studio">Start a bespoke enquiry</a>
             </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-muted">
+        <div class="container">
+          <p class="eyebrow">From Textile to Form</p>
+          <h2>Made to be lived with.</h2>
+          <p class="section-intro">
+            Shirt dresses, kaftans, trousers, cushions and accessories, shown only
+            where images are ready and approved.
+          </p>
+          <div class="application-grid">
+            <div class="image-placeholder">Kaftan<br />image pending</div>
+            <div class="image-placeholder">Shirt dress<br />image pending</div>
+            <div class="image-placeholder">Trousers<br />image pending</div>
+            <div class="image-placeholder">Cushions<br />image pending</div>
           </div>
         </div>
       </section>
 
       <section class="section section-muted" id="craft">
         <div class="container narrow-section">
-          <p class="eyebrow">Craft &amp; Small Batches</p>
+          <p class="eyebrow">Craft and Small Batches</p>
           <h2>Made with intention.</h2>
-          <p>
-            Short craft and small-batch copy will explain the making process,
-            materials, and responsible approach once approved.
-          </p>
+          <ul class="craft-list">
+            <li>Many designs use artisanal processes such as hand-dyeing.</li>
+            <li>Cloth is made in small batches, so colour and pattern may vary slightly between lots.</li>
+            <li>Repeat orders are by enquiry.</li>
+          </ul>
         </div>
       </section>
 
@@ -118,10 +139,11 @@
           <div>
             <p class="eyebrow">Enquire</p>
             <h2>Let’s talk textiles.</h2>
-            <p>
-              Contact details and the approved enquiry destination will be added
-              before launch.
-            </p>
+            <p>Tell us what you are looking for. We reply personally.</p>
+            <div class="contact-links">
+              <a class="button button-gold" data-whatsapp href="#">Enquire on WhatsApp</a>
+              <a class="button button-outline" data-instagram href="#">Instagram</a>
+            </div>
           </div>
           <form class="enquiry-form">
             <label>
@@ -129,8 +151,17 @@
               <input type="text" name="name" autocomplete="name" required />
             </label>
             <label>
-              Email
-              <input type="email" name="email" autocomplete="email" required />
+              Email or phone
+              <input type="text" name="contact" autocomplete="email" required />
+            </label>
+            <label>
+              Area of interest
+              <select name="interest">
+                <option>Heritage Textiles</option>
+                <option>Contemporary Textiles</option>
+                <option>Bespoke Studio</option>
+                <option>Something else</option>
+              </select>
             </label>
             <label>
               Message
@@ -145,7 +176,9 @@
 
     <footer class="site-footer">
       <div class="container footer-content">
-        <span>La Maison d’Afrique</span>
+        <img class="footer-logo" src="assets/images/logo.jpg" alt="La Maison d’Afrique monogram" />
+        <a data-instagram href="#">Instagram</a>
+        <a data-whatsapp href="#">WhatsApp</a>
         <span>© <span id="current-year"></span> All rights reserved.</span>
       </div>
     </footer>
