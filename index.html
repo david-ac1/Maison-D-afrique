@@ -7,29 +7,40 @@
       name="description"
       content="La Maison d’Afrique — expressive African textiles for fashion and interiors."
     />
+    <meta name="theme-color" content="#fdfdf9" />
+    <meta property="og:title" content="La Maison d’Afrique — An African Textile House" />
+    <meta
+      property="og:description"
+      content="Expressive African textiles for fashion and interiors, from heritage weaving to hand-dyed, bespoke cloth."
+    />
+    <meta property="og:type" content="website" />
     <title>La Maison d’Afrique — An African Textile House</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <a class="skip-link" href="#top">Skip to content</a>
     <header class="site-header">
       <div class="container header-bar">
         <a class="brand" href="#top" aria-label="La Maison d’Afrique home">
-          <img class="brand-logo" src="assets/images/logo.jpg" alt="" />
+          <img class="brand-logo" src="assets/images/logo.jpg" alt="" width="200" height="167" />
           <span class="brand-name">La Maison d’Afrique</span>
         </a>
 
-        <nav class="site-nav" aria-label="Main navigation">
+        <nav class="site-nav" id="main-navigation" aria-label="Main navigation">
           <a href="#story">Our Story</a>
           <a href="#collections">Collections</a>
           <a href="#craft">Craft</a>
           <a href="#enquire">Enquire</a>
         </nav>
 
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-navigation">
+          Menu
+        </button>
         <a class="button button-gold" data-whatsapp href="#">WhatsApp</a>
       </div>
     </header>
 
-    <main id="top">
+    <main id="top" tabindex="-1">
       <section class="hero">
         <div class="container hero-content">
           <div class="hero-copy">
@@ -53,6 +64,9 @@
             class="hero-image"
             src="assets/images/hero-textile.jpg"
             alt="Hand-dyed embroidered cotton lace draped on a mannequin, with a close-up of the fabric"
+            width="900"
+            height="1350"
+            fetchpriority="high"
           />
         </div>
       </section>
@@ -90,13 +104,13 @@
               <a href="#enquire" data-interest="Heritage Textiles">Enquire about Heritage</a>
             </article>
             <article class="collection-card">
-              <img class="card-image" src="assets/images/contemporary-textile.jpg" alt="Blue and rust hand-dyed embroidered cotton lace" loading="lazy" />
+              <img class="card-image" src="assets/images/contemporary-textile.jpg" alt="Blue and rust hand-dyed embroidered cotton lace" width="900" height="1350" loading="lazy" decoding="async" />
               <h3>Contemporary Textiles</h3>
               <p>Chiffon, rayon satin, embroidered cotton lace and textured stretch fabrics in expressive colour.</p>
               <a href="#enquire" data-interest="Contemporary Textiles">Enquire about Contemporary</a>
             </article>
             <article class="collection-card">
-              <img class="card-image" src="assets/images/bespoke-textile.jpg" alt="Rust hand-dyed fabric draped on a mannequin" loading="lazy" />
+              <img class="card-image" src="assets/images/bespoke-textile.jpg" alt="Rust hand-dyed fabric draped on a mannequin" width="900" height="1350" loading="lazy" decoding="async" />
               <h3>Bespoke Studio</h3>
               <p>Custom colourways, dyeing and development for designers, ateliers and interiors.</p>
               <a href="#enquire" data-interest="Bespoke Studio">Start a bespoke enquiry</a>
@@ -168,7 +182,7 @@
               <textarea name="message" rows="5" required></textarea>
             </label>
             <button class="button button-gold" type="submit">Send enquiry</button>
-            <p class="form-status" role="status" hidden></p>
+            <p class="form-status" role="status" aria-live="polite" hidden></p>
           </form>
         </div>
       </section>
@@ -176,7 +190,7 @@
 
     <footer class="site-footer">
       <div class="container footer-content">
-        <img class="footer-logo" src="assets/images/logo.jpg" alt="La Maison d’Afrique monogram" />
+        <img class="footer-logo" src="assets/images/logo.jpg" alt="La Maison d’Afrique monogram" width="200" height="167" />
         <a data-instagram href="#">Instagram</a>
         <a data-whatsapp href="#">WhatsApp</a>
         <span>© <span id="current-year"></span> All rights reserved.</span>
